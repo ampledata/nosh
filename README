@@ -7,9 +7,9 @@ Features
     
 Installation
 ============
-    1) Open nosh.py in your favorite $EDITOR and set splunkServer, username and password.
-    2) Fix nosh.py permissions: chmod +x nosh.py
-    3) Copy nosh.py to a directory in your $PATH
+    1. Open nosh.py in your favorite $EDITOR and set splunkServer, username and password.
+    2. Fix nosh.py permissions: chmod +x nosh.py
+    3. Copy nosh.py to a directory in your $PATH
 
 Usage
 =====
@@ -25,7 +25,21 @@ Usage
     
     ..and open a web browser to the Splunk web interface.
 
+MacOS X Service
+===============
+    nosh.py can be configured as a Mac OS X Service. When enabled, you can use Mac OS X contextual menus 
+    to select and index files using Splunk.
+    
+    To create a custom Mac OS X Service for nosh.py:
+        1. Open Automator.app
+        2. When prompted for a template, select 'Service' (or go to File -> New).
+        3. Set 'Service receives selected' to 'files or folders' in 'any application'.
+        4. In your Actions Library select 'Run Shell Script'.
+        5. In the 'Run Shell Script' action set 'Pass input:' to 'as arguments'.
+        6. For the acutal shell script to run, enter: /path/to/nosh.py $*
+        7. File -> Save and set 'Save Service as:' to 'Index with Splunk'.
+                
 Meta
 ====
     Author: Greg Albrecht (gba@gregalbrecht.com)
-    Version: $Id: //splunk/qa/nosh/nosh.py#4 $
+    Version: $Id: //splunk/qa/nosh/nosh.py#5 $
