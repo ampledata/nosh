@@ -1,0 +1,31 @@
+nosh.py - Eat a little content, using Splunk.
+
+Features
+========
+    nosh.py uploads a local file to a remote Splunk server and opens a web browser to the Splunk web interface, 
+    allowing you to search the contents of your file, report on contents within the file, and more.
+    
+Installation
+============
+    1) Open nosh.py in your favorite $EDITOR and set splunkServer, username and password.
+    2) Fix nosh.py permissions: chmod +x nosh.py
+    3) Copy nosh.py to a directory in your $PATH
+
+Usage
+=====
+    nosh.py takes one argument: The name of a file to consume.
+    
+    For example, to consume your /var/log/messages log file with Splunk:
+        $ nosh.py /var/log/messages
+        
+    ..which will return:
+        Uploading /var/log/messages...
+        Waiting 5 seconds for Splunk to index the file.
+        About to open a this URL in a browser: http://splunk.example.com:8000/...?q=search%20source%3D%22messages%22
+    
+    ..and open a web browser to the Splunk web interface.
+
+Meta
+====
+    Author: Greg Albrecht (gba@gregalbrecht.com)
+    Version: $Id: //splunk/qa/nosh/nosh.py#4 $
