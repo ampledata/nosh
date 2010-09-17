@@ -1,4 +1,4 @@
-nosh.py - Eat a little content, using Splunk.
+nosh.py - Eat a little data, using Splunk.
 
 Features
 ========
@@ -42,4 +42,4 @@ MacOS X Service
 Meta
 ====
     Author: Greg Albrecht (gba@gregalbrecht.com)
-    Version: $Id: //splunk/qa/nosh/nosh.py#5 $
+    Version: $Id: //splunk/qa/nosh/nosh.py#6 $
