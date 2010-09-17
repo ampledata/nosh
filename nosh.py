@@ -1,5 +1,5 @@
 #!/usr/bin/env python
-"""nosh.py - Eat a little content, using Splunk.
+"""nosh.py - Eat a little data, using Splunk.
 
 Features
 ========
@@ -43,7 +43,7 @@ MacOS X Service
 Meta
 ====
     Author: Greg Albrecht (gba@gregalbrecht.com)
-    Version: $Id: //splunk/qa/nosh/nosh.py#5 $
+    Version: $Id: //splunk/qa/nosh/nosh.py#6 $
 """
 ## Change Me!   <----- CHANGE STUFF HERE <------ HEY LOOK AT ME
 splunkServer    = 'localhost'
@@ -69,7 +69,7 @@ splunkServerHTTPPort    =   "8000"
 
 ## Definitely nothing to change here.
 __author__      = "$Author: gba $"
-__version__     = "$Id: //splunk/qa/nosh/nosh.py#5 $"
+__version__     = "$Id: //splunk/qa/nosh/nosh.py#6 $"
 mgmtHostPort    =   ':'.join((splunkServer,splunkServerMgmtPort))
 params          =   { "host" : defaultHost }
 logger          =   logging.getLogger("nosh")
